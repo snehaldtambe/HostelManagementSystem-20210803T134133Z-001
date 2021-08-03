@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+ul.b {
+    list-style-type: square;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial;
+    padding: 10px;
+    background:white;
+}
+
+/* Header/Blog Title */
+.header {
+    padding: 100px;
+	font-family:"Courier New"; 
+    text-align:center;
+    background-image: url("f1.jpg");
+	background-size:1500px 500px;
+	background-repeat: no-repeat;
+}
+
+.header h1 {
+    font-size: 50px;
+	color:DarkOrange;
+}
+
+/* Style the top navigation bar */
+.topnav {
+    overflow: hidden;
+    background-color: TEAL;
+	
+	}
+
+/* Style the topnav links */
+.topnav a {
+    float: left;
+    display: block;
+    color: WHITE;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+/* Change color on hover */
+.topnav a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+/* Create two unequal columns that floats next to each other */
+/* Left column */
+.leftcolumn {   
+    float: left;
+    width: 75%;
+	height:100%
+	
+}
+.button {
+    background-color: #4CAF50; /* Green */
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+
+.button3 {background-color: #008CBA;} /* Blue */
+.leftcolumn h2{
+		color:teal;
+		text-align:center;
+			}
+
+/* Right column */
+.rightcolumn {
+    float: left;
+    width: 20%;
+	    background-color: #f1f1f1;
+    padding-left:40px;
+}
+
+/* Fake image */
+.fakeimg {
+    background-image: url("hostel.jpg");
+   /* width: 1000px;*/
+    padding: 20px;
+	background-repeat: no-repeat;
+
+}
+
+/* Fake on right side image */
+.fakeeimg {
+    background-image: url("logo.png");
+   /* width: 100px;*/
+    padding: 20px;
+	background-repeat: no-repeat;
+	align: middle;
+
+}
+
+/* Add a card effect for articles */
+.card {
+    background-color: white;
+    padding: 120px
+    margin-top: 20px;
+}
+.card h2{
+		color:#FF8C00;
+		text-align:center;
+		}
+.card h4{
+		color:black;
+		text-align:left;
+		}
+.card h3{
+		text-align:center;
+		}
+
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* Footer */
+.footer {
+    padding: 20px;
+    text-align: center;
+    background: #D0D3D4;
+    margin-top: 20px;
+}
+
+/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 800px) {
+    .leftcolumn, .rightcolumn {   
+        width: 100%;
+        padding: 0;
+    }
+}
+
+/* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
+@media screen and (max-width: 400px) {
+    .topnav a {
+        float: none;
+        width: 100%;
+    }
+}
+
+marquee {
+             width: 100%;
+			 HEIGHT: 100%;
+             background-color: #F0FFFF;
+         }
+		 .dropbtn {
+    background-color: TEAL;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: TEAL;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {background-color: #f1f1f1}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown:hover .dropbtn {
+    background-color:#ddd;
+}
+</style>
+</style>
+</head>
+<body>
+
+<div class="header">
+  <h1>GPA GIRLS HOSTEL</h1><br><br><br>
+  <p></p>
+</div>
+ <marquee direction="left" onmouseover="this.stop();" onmouseout="this.start()" scrollamount="5"; ><h4>WELCOME TO GOVERNMENT POLYTECHNIQUE AWSARI(KH) GIRLS HOSTEL</h4></marquee>
+
+<div class="topnav">
+  <a href="front1.html">HOME</a>
+   <a href="http://www.gpawasari.ac.in/"> ABOUT GPA</a>
+  <a href="web2.html">ADMISSION</a>
+  <a href="index1.php">STUDENT LOGIN</a>
+  <a href="index1.php"> ADMIN LOGIN</a>
+	<div class="dropdown">
+	<button class="dropbtn"></button>
+	<div class="dropdown-content">
+    <a href="#">STUDENT</a>
+    <a href="#">ADMIN</a>
+    <a href="#">Link 3</a>
+  </div>
+</div>
+
+</div>
+ 
+<div class="row">
+  <div class="leftcolumn">
+    <div class="card">
+      <h2>GPA GIRLS HOSTEL</h2>
+      <h4>At GPA every care is taken to provide the best facilities for students.</h4>
+	  <h4> The hostel provides hygienic food and clean surroundings so that the students can live in a healthy atmosphere at affordable prices.</h4>
+      <div class="" style="height:800px;">
+	  <h2>ADMISSIONS TO THOSE...</h2>
+	  <ul class="b">
+       <li><h4>A student admitted to Government Polytechnique Collage Of Awsari only shall be
+eligible to apply for admission to hostel.</h4></li>
+       <li><h4> Students will have to buy prospectus and apply for admission in the Prescribed form through the
+respective Principal of the college.</h4></li>
+	   <li><h4> Admission will be granted by management at its own discretion.</h4></li>
+	   <li><h4>Admission to the hostel will be confirmed only after the student pays hostel fees and deposits and
+submits receipts in the hostel office.</h4></li>
+	   <li><h4>For students, whose result of earlier annual/semester is pending may be admitted to the hostel only
+provisionally. Admission of such students shall be confirmed after the declaration of result and only
+if they become eligible for succeeding year of study.</h4></li>
+	   <li><h4> Admission to the hostel will be valid only for one academic year.</h4></li>
+        <li><h4>Student desirous of continuing admission in the hostel for the next academic year will have to
+follow the same procedure as prescribed for first year admission in the hostel. The admission to such
+student will be given only by seeing her behavior in the previous year of stay in the hostel.
+In disciplined students will not be given admission in the hostel for next academic year.</h4></li>
+         </ul>
+         <div class="row"></div><center>
+          <form action="webb.html">
+   
+    <div class="row">
+      
+    </div>
+	  </div>
+       
+	<h4>Situated at a very approachable location near manchar(pune).</h4>
+	<h4>Currently GPA is one of the best colleges in Pune.</h4>
+	<h4>The complete campus is well equipped with all latest infrastructural facilities, Sports facilities, spacious lawn and hostel facility for boys and girls.</h4>
+    </div>
+    
+  </div>
+  <div class="rightcolumn">
+    <div class="card">
+      <h2>About US</h2>
+      <p><h3>Vision: <h3>
+	  <h3>"To inculcate technical & life skills among rural masses to make them excellent technocrat & nation builders."</h3></p>
+	  
+      <p><h3>Mission: <h3>
+	  <h3>To enrich with fundamental & state of art technologies in engineering to meet requirement of industry.</h3>
+	  <h3> To develop skills among rural masses to become self-employable.</h3>
+	  <h3> To provide value based education to serve society.</h3>
+	  <h3>To impart inputs require for lifelong learning.</h3></p>
+    </div>
+    <div class="card">
+      <h2>SPOTLIGHTS</h2>
+	  <marquee direction="up" onmouseover="this.stop();" onmouseout="this.start()" scrollamount="5"; >
+	  <ul>
+		<li><h3>FE admission started</h3></li>
+		<li><h3>last date for Admission 1/08/2019</h3></li>
+		<li><h3>85 Rooms Available for Admission</h3></li>
+		<li><h3>4 Seater Rooms - 80 </h3></li>
+		<li><h3>Guess Rooms - 4 </h3></li>
+		<li><h3>Mess Facility is Compulsory to all Hostelites</h3></li>
+	  </ul>
+	  </marquee>
+    </div>
+    <div class="card">
+      <h2>REACH  US </h2>
+      <p><h4>E-MAIL : gpawasari@gmail.com</h4>
+		 <h4>OFFICE PHONE :</h4>
+		<h4>020 27653168, 27653166 <h4>
+		</p>
+    </div>
+  </div>
+</div>
+
+<div class="footer">
+  <h2>Government Polytechnique Awasari(kh)</h3>
+<h3>Government Polytechnique Collage Of Awasari</h3>
+<h3>At Post-Awasari(khurd),Tal-Ambegaon, Dist-Pune,</h3>
+<h3>Awasari(Khurd) Pune Maharashtra,</h3>
+<h3>Awsari-412405.</h3>
+</div>
+
+</body>
+</html>
